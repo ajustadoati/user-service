@@ -17,6 +17,7 @@
 		<java.version>17</java.version>
 		<testcontainers.version>1.18.0</testcontainers.version>
         <springdoc-openapi-ui.version>2.0.0</springdoc-openapi-ui.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -70,6 +71,18 @@
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>${springdoc-openapi-ui.version}</version>
+        </dependency>
+        <!-- Map Construct -->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${mapstruct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>${mapstruct.version}</version>
+            <scope>provided</scope>
         </dependency>
 	</dependencies>
 	<dependencyManagement>

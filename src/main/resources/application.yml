@@ -1,0 +1,9 @@
+hello: "value from app"
+#spring.profiles.active={environment}
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ajustadoati
+      authentication-database: admin
+server:
+    port: 8088
